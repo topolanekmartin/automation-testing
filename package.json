@@ -1,0 +1,9 @@
+{
+    "name": "automation-testing",
+    "version": "1.0.0",
+    "description": "Powerful end-to-end tests powered by cucumber-js and playwright ⚡",
+    "main": "index.js",
+    "repository": "https://github.com/topolanekmartin/automation-testing.git",
+    "author": "Martin Topolánek <topolanekmar@gmail.com>",
+    "license": "MIT"
+}
