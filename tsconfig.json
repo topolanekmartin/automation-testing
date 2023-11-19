@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Default",
+    "ts-node": {
+        "require": ["ts-node/register", "tsconfig-paths/register"]
+    },
+    "compilerOptions": {
+        "composite": false,
+        "declaration": true,
+        "declarationMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "inlineSources": false,
+        "isolatedModules": true,
+        "moduleResolution": "node",
+        "preserveWatchOutput": true,
+        "skipLibCheck": true,
+        "target": "esnext",
+        "module": "commonjs",
+        "sourceMap": true /* Generates corresponding '.map' file. */,
+        "outDir": "./build" /* Redirect output structure to the directory. */,
+        "noEmit": true /* Do not emit outputs. */,
+        "strict": true /* Enable all strict type-checking options. */,
+        "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+        "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
+        "noUnusedLocals": true /* Report errors on unused locals. */,
+        "noUnusedParameters": true /* Report errors on unused parameters. */,
+        "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+        "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+        "skipDefaultLibCheck": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+        "baseUrl": "./"
+    },
+    "exclude": ["node_modules"],
+    "include": ["environment.d.ts"]
+}

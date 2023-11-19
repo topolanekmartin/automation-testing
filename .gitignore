@@ -3,3 +3,6 @@
 
 # Package manager
 /node_modules
+
+# Test results
+/reports

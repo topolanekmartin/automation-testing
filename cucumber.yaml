@@ -1,0 +1,16 @@
+# For further information please visit https://github.com/cucumber/cucumber-js/blob/main/docs/configuration.md
+default:
+    requireModule:
+        - ts-node/register
+        - dotenv/config
+    require:
+        - supports/hooks.ts
+        - supports/typeDefinitions.ts
+        - supports/world.ts
+        - steps/**/*.ts
+    format:
+        - html:reports/html/index.html
+        - summary
+        - progress-bar
+    formatOptions:
+        snippetInterface: async-await

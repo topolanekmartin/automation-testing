@@ -5,5 +5,25 @@
     "main": "index.js",
     "repository": "https://github.com/topolanekmartin/automation-testing.git",
     "author": "Martin Topolánek <topolanekmar@gmail.com>",
-    "license": "MIT"
+    "license": "MIT",
+    "scripts": {
+        "test": "cross-env TS_NODE_PROJECT=tsconfig.json cucumber-js --config cucumber.yaml",
+        "test:debug": "cross-env PWDEBUG=true yarn test"
+    },
+    "dependencies": {
+        "@cucumber/cucumber": "10.0.1",
+        "@playwright/test": "^1.39.0",
+        "@types/fs-extra": "^11.0.4",
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.3.1",
+        "fs-extra": "^11.1.1",
+        "playwright": "^1.39.0",
+        "ts-node": "^10.9.1",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.2.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.9.0",
+        "prettier": "^3.1.0"
+    }
 }
